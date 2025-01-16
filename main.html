@@ -4,11 +4,106 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Table</title>
+	  <style>
+        /* table {
+            border-collapse: collapse;
+            width: 100%;
+        } */
+        table, th, td {
+            border: 1px solid black;
+            /* padding: 8px; */
+            text-align: center;
+        }
+        #wrapper, td{
+            width:100vw;
+            margin: 20px 0;
+        }
+        #bkround {
+            background-color: black;
+            color: white;
+        }
+    </style>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <table style="width: 100%; height: 100%">
-      <!-- Your code here -->
+    <!-- <table style="width: 100%; height: 100%">
+      
+    </table> -->
+	  <table id="wrapper" >
+        <tbody>
+            <tr>
+                <td>
+                    <table>
+                        <thead>
+                            <tr>
+                            <th colspan="2">Nested Table 2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                        </tr>
+                        <tr>
+                            <td>abc</td>
+                            <td>def</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <th>Nested Table 1</th>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>List item</li>
+                                    <li>List item</li>
+                                    <li>List item</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </td>
+                <tr>
+                <td>
+                    <table>
+                        <thead>
+                            <tr>
+                            <th colspan="2">Nested Table 3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <!-- <tr>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                        </tr> -->
+                        <tr>
+                            <td>Nested Table</td>
+                            <td>Demo Continued</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <thead>
+                            <tr>
+                            <th colspan="2">Nested Table 4</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr id="bkround">
+                            <td colspan="2">HTML</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            </tr>
+        </tbody>
     </table>
   </body>
 </html>
